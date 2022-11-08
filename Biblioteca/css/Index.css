@@ -1,0 +1,81 @@
+body{
+    overflow-x: hidden;
+}
+.bg-livros{
+    background-color: #008b8b;
+    
+    height: 50vh;
+    width: 210vh;
+    margin-top: 500px;
+    
+    
+}
+section form div{
+    
+    border-radius: 10px;
+    background-color: white;
+    height: 15vh;
+    width: 130vh;
+    margin-top: 150px;
+    margin-left: 250px;
+    display: inline-flex;
+} 
+.buttonPesquisa{
+    background-color: #008b8b;
+    width: 100px;
+    height: 5vh;
+    margin-top: 30px;
+    
+    border:none;
+	border-radius: 0px 20px 20px 0px;
+    color: black;
+    
+}
+.inputPesquisa{
+    color: #008b8b;
+    width: 630px;
+    height: 5vh;
+    margin-left: 20px;
+    margin-top: 30px;
+    border:none;
+	border-radius: 20px 0px 0px 20px;
+    background-color: #ededed;
+    font-size: 15px;
+    padding-left: 10px;
+}
+@media only screen and (max-width: 999px) {
+	
+
+	section form div{
+        width: 500px;
+    }
+    .buttonPesquisa{
+        width: 15vh;
+    }
+    .inputPesquisa{
+        width: 60vh;
+    }
+
+	   
+    
+}
+
+@media only screen and (max-width: 420px) {
+	
+
+	section form div{
+        width: 420px;
+        margin-left: 0px;
+        border-radius: 0px;
+    }
+    .buttonPesquisa{
+        width: 15vh;
+    }
+    .inputPesquisa{
+        width: 40vh;
+        margin-left: 25px;
+    }
+
+	   
+    
+}
