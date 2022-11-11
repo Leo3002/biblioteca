@@ -12,7 +12,7 @@
         include 'navbar.php';
         include 'conexao.php'; 
 
-        $consulta = $cn->query('select nomeLivro,preco,capaLivro,quantiEstoque from livros');
+        $consulta = $cn->query("select nomeLivro,preco,capaLivro,quantiEstoque from livros where destaque = 's'");
     ?>
     <div class="container-fluid">
         <div class="row">

@@ -7,11 +7,19 @@
           <div class="line2"></div>
           <div class="line3"></div>
         </div>
+        
         <ul class="nav-list">
+        <form   action="#">
+          <Div>
+            <input class="inputPesquisa" type="text" name="" id="" placeholder="Pesquisa">
+            <button class="btnPesquisa" type="submit">Buscar</button>
+          </Div>
+        </form>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="destaques.php">Destaques</a></li>
           <li><a href="#">Categorias</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Contato</a></li>
         </ul>
+        
       </nav>
     </header>
     
