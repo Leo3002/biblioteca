@@ -1,3 +1,4 @@
+
 <link rel="stylesheet" href="css/nav.css">
 <header>
       <nav>
@@ -10,7 +11,8 @@
         
         <ul class="nav-list">
         <form   action="#">
-          <Div>
+
+          <Div >
             <input class="inputPesquisa" type="text" name="" id="" placeholder="Pesquisa">
             <button class="btnPesquisa" type="submit">Buscar</button>
           </Div>
@@ -18,6 +20,22 @@
           <li><a href="index.php">Home</a></li>
           <li><a href="destaques.php">Destaques</a></li>
           <li><a href="#">Categorias</a></li>
+          <?php if(empty($_SESSION['ID'])) { ?>
+          <li><a href="login.php">Logar</a></li>
+          <?php } else{
+
+              if($_SESSION['Status'] == 0) {
+                  $consulta_usuario = $cn->query("select nomeUsuario from usuario where codUsuario = '$_SESSION[ID]'");
+                  $exibe_usuario = $consulta_usuario->fetch(PDO::FETCH_ASSOC);
+                  ?>
+                  <li><a href="#"><?php echo $exibe_usuario['nomeUsuario'];?></a></li>
+                  <li><a href="sair.php">Sair</a></li>
+              <?php } else {?>
+                <li><a href="adm.php"><button class="btnAdmin" type="submit">Administrador</button></a></li>
+                <li><a href="sair.php"> Sair</a></li>
+              <?php } }?>
+              
+
         </ul>
         
       </nav>

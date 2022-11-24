@@ -20,13 +20,29 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 4px;
 }
+.btnAdmin{
+  border: none;
+  border-radius: 10px;
+  height: 20px;
+  width: 100px;
+  color: black;
+  background-color: #00acd7;
+  border-width: thin;
+  border-style: solid;
+  border-color: white;
+}
+.btnAdmin:hover{
+  
+  color: #fff;
+}
+
 
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: #008b8b;
+  background: #00acd7;
   height: 50px;
 }
 
@@ -71,14 +87,16 @@ nav {
   height: 20px;
   width: 100px;
   color: black;
-  background-color: #eead2d;
-  
-  
+  background-color: #00acd7;
+  border-width: thin;
+  border-style: solid;
+  border-color: white;
 }
 .btnPesquisa:hover{
   
   color: #fff;
 }
+
 nav ul form div {
   display: table-row;
 }
@@ -86,15 +104,15 @@ nav ul form div {
 @media (max-width: 999px) {
   body {
     overflow-x: hidden;
-    overflow-y: scroll;
+    
   }
   .nav-list {
     position: absolute;
     top: 8vh;
     margin-left: 484px;
     width: 50vw;
-    height: 50px;
-    background: #008b8b;
+    height: 100%;
+    background: #00acd7;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -105,28 +123,28 @@ nav ul form div {
   .nav-list li {
     margin-left: 0;
     opacity: 0;
-    overflow: hidden;
+    
   }
   .mobile-menu {
     display: block;
-    overflow: hidden;
+    
     
   }
 }
 
 .nav-list.active {
   transform: translateX(0);
-  overflow: hidden;
+  
   
 }
 .btnPesquisa{
   width: 60px;
-  overflow: hidden;
+  
   
 }
 .inputPesquisa{
   width: 180px;
-  overflow: hidden;
+  
 }
 
 

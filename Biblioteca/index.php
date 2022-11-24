@@ -9,8 +9,10 @@
 </head>
 <body>
     <?php 
-        include 'navbar.php';
+        session_start();
         include 'conexao.php'; 
+        include 'navbar.php';
+        
 
         $consulta = $cn->query('select nomeLivro,preco,capaLivro,quantiEstoque from livros');
     ?>
